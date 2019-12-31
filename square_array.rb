@@ -1,11 +1,6 @@
 require 'pry'
 def square_array(array)
-  new_array = []
-  array.each do |i|
-    new_array << i*i
-  end
-  new_array
-end
+  array.collect { |i| i^2}
 
 print square_array([1,2,3])
 
